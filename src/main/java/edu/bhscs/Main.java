@@ -21,6 +21,7 @@ class Main {
     System.out.println("Hello");
     System.out.println("!!!! PROGRAM END !!!!");
     System.out.println("-------------------");
+    System.out.println();
+
   }
 }
-
