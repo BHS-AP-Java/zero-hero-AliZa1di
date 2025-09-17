@@ -12,18 +12,31 @@
 
 package edu.bhscs;
 
-class Main {
+public class Main {
+  public static final float NAME_OF_THIS_FLOAT = 69.42f;
+  public static final char A = 'a';
 
   public static void main(String[] args) {
+    System.out.println(A);
+    String myString = pushup("Garlic");
+    System.out.println(myString);
 
-    System.out.println("-------------------");
-    System.out.println("!!!! PROGRAM START !!!!");
-    System.out.println("Mr Reiber Rocks!");
-    System.out.println();
-    System.out.println("Hello");
-    System.out.println("!!!! PROGRAM END !!!!");
-    System.out.println("-------------------");
-    System.out.println();
+    Awesome steve = new Awesome("Steve, im steve... and 200lbs");
+    Awesome sue = new Awesome("sue hee, yep im also fat");
+    Awesome linda = new Awesome("linda, i play board games, yep, im fat");
+    Awesome jhon = new Awesome("jhon w a jh, fatass, i play fortnite, of course im 100% body fat");
+
+    steve.getName();
+    sue.getName();
+    linda.getName();
+    jhon.getName();
+
 
   }
+
+
+public static String pushup(String food){
+  return "sweat" + food;
+}
+
 }
