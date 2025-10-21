@@ -10,4 +10,8 @@ public class Player {
   public String Name() {
     return name;
   }
+
+  public String giveAnswer(String giveanswer) {
+    return "yeah!";
+  }
 }
