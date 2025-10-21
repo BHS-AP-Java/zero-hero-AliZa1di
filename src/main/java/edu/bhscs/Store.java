@@ -9,5 +9,5 @@ public class Store {
     return "Yum!";
   }
 
-  public Store(String name, StorePersonDude clerk) {}
+  public Store(String name, Player clerk) {}
 }

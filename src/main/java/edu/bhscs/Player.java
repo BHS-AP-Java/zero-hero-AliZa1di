@@ -1,9 +1,9 @@
 package edu.bhscs;
 
-public class StorePersonDude {
+public class Player {
   private String name;
 
-  public StorePersonDude(String name) {
+  public Player(String name) {
     this.name = name;
   }
 
