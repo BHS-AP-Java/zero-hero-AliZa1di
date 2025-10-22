@@ -14,10 +14,10 @@ public class Main {
 
     Player user = new Player("GREIBER");
 
-    String name = user.giveAnswer("What is your name?");
-    String age = user.giveAnswer("How old are you?");
+    String cake = user.giveAnswer("What cake u need");
+    String frosting = user.giveAnswer("What frosting u need");
 
-    System.out.println("Name: " + name);
-    System.out.println("Age: " + age);
+    System.out.println("cake " + cake);
+    System.out.println("frosting " + frosting);
   }
 }

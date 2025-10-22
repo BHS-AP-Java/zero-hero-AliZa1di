@@ -20,8 +20,12 @@ public class Customer {
     System.out.println(name + " paid " + paid);
     return paid;
   }
-    public void takeCake(Cake cake){
-      System.out.println(this.name + " received a " + cake());
-    }
+
+  public void takeCake(Cake cake) {
+    System.out.println(this.name + " received a " + cake());
   }
 
+  private String cake() {
+    return "cake";
+  }
+}

@@ -12,6 +12,8 @@ public class Baker {
   Store placeOfWork;
   int cash;
 
+  private String name;
+
   // CONSTRUCTOR
   Baker(Player p) {
     this.p = p;
@@ -24,8 +26,7 @@ public class Baker {
   }
 
   Cake bakeCake() {
-    String answer = this.p.giveAnswer("what cake do you you want?");
-    return new Cake(answer, this.f);
+    return new Cake();
   }
 
   void takeJob(Store bakery) {

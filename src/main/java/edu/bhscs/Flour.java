@@ -2,7 +2,7 @@ package edu.bhscs;
 
 public class Flour {
 
-   private String type;
+  private String type;
 
   public Flour() {
     this.type = "YIPEEE!";
