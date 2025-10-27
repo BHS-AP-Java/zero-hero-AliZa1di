@@ -7,15 +7,19 @@ package edu.bhscs;
 
 public class Baker {
   // PROPERTIES AND FIELDS
+  String name;
   Player p;
   Flour f;
   Store placeOfWork;
   int cash;
 
-  private String name;
+
 
   // CONSTRUCTOR
-  Baker(Player p) {
+public Baker(String name){
+  this.name = name;
+}
+public Baker(Player p) {
     this.p = p;
   }
 
