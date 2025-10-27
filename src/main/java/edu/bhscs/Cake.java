@@ -1,49 +1,58 @@
-// Ali Zaidi
-// P2
-// Zero-Hero
-// 10-10-25
-
 package edu.bhscs;
 
 public class Cake {
-  private String flavor;
-  private String frosting;
 
+  // PROPERTIES AND FIELDS
+  String ingredient1;
+  String ingredient2;
+  String person;
+  String icing;
+  Flour flour;
+  int weight;
+  int price;
+  int height;
+  int width;
+  int layers;
+
+  // CONSTRUCTOR
   public Cake() {
-    this.flavor = "Chocolate";
-    this.frosting = "Vanilla";
+
   }
 
-  public Cake(String flavor, String frosting) {
-    this.flavor = flavor;
-    this.frosting = frosting;
+  public Cake(String icing, int height, int width, int layers) {
+    this.icing = icing;
+    this.height = height;
+    this.width = width;
+    this.layers = layers;
   }
 
-  public String Flavor() {
-    return flavor;
-  }
 
-  public String Frosting() {
-    return frosting;
-  }
+  // METHOD
+  void draw() {
+    System.out.println(icing.repeat(width));
+    for (int l = 0; l < layers; l++) {
+     for (int i = 0; i < height; i++) {
+        for (int j = 0; j < width; j++) {
+          double rand = Math.random();
+          char sprinkle = rand < 0.333 ? '#' : (rand < 0.666 ? '*' : '=');
+          System.out.print(sprinkle);
+        }
+        System.out.println();
 
-  public String describe() {
-    return flavor + " cake with " + frosting + " frosting";
-  }
-
-  void draw(String FortniteIcing, int x, int y) {
-
-    for (int count = 0; count < 5; count++) {
-      for (int i = 0; i < 0; i++) {
-        System.out.print(FortniteIcing);
-        System.out.print(this.frosting);
       }
+
+
+      if (l < layers - 1) {
+        System.out.println("-".repeat(width));
+      }
+
+      System.out.println("=".repeat(width));
+
     }
+  }
 
-    System.out.println("----=------X = ------- X ------- =");
-
-    System.out.println(" _______________________________________");
-
-    System.out.println("Drawing a cake:");
+  public static void main(String[] args) {
+    Cake myCake = new Cake("~", 5, 20, 3);
+    myCake.draw();
   }
 }
