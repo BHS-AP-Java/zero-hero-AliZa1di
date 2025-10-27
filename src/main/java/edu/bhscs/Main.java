@@ -17,11 +17,13 @@ public static void date10_27() {
     Cake bDay = bob.bakes(5, "Suzzie");
     bDay.draw(t);
 
-
     Player user = new Player("GREIBER");
 
     String cake = user.giveAnswer("What cake u need");
     String frosting = user.giveAnswer("What frosting u need");
+
+    new Cake().draw();
+
 
     System.out.println("cake " + cake);
     System.out.println("frosting " + frosting);

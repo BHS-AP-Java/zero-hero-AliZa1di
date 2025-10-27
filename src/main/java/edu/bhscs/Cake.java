@@ -34,7 +34,7 @@ public class Cake {
      for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
           double rand = Math.random();
-          char sprinkle = rand < 0.333 ? '#' : (rand < 0.666 ? '*' : '=');
+          char sprinkle = rand < 0.333 ? '-' : (rand < 0.666 ? '*' : '/');
           System.out.print(sprinkle);
         }
         System.out.println();
