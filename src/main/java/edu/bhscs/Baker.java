@@ -13,13 +13,12 @@ public class Baker {
   Store placeOfWork;
   int cash;
 
-
-
   // CONSTRUCTOR
-public Baker(String name){
-  this.name = name;
-}
-public Baker(Player p) {
+  public Baker(String name) {
+    this.name = name;
+  }
+
+  public Baker(Player p) {
     this.p = p;
   }
 
@@ -38,6 +37,13 @@ public Baker(Player p) {
     if (doYouWantToWorkHere.equals("y")) {
       this.placeOfWork = bakery;
       System.out.println(this.name + " now works at " + bakery.getName());
+
+
+
     }
+  }
+
+  Cake bakes(int size, String forWho) {
+    return new Cake();
   }
 }

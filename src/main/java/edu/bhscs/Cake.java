@@ -15,9 +15,7 @@ public class Cake {
   int layers;
 
   // CONSTRUCTOR
-  public Cake() {
-
-  }
+  public Cake() {}
 
   public Cake(String icing, int height, int width, int layers) {
     this.icing = icing;
@@ -26,28 +24,24 @@ public class Cake {
     this.layers = layers;
   }
 
-
   // METHOD
   void draw() {
     System.out.println(icing.repeat(width));
     for (int l = 0; l < layers; l++) {
-     for (int i = 0; i < height; i++) {
+      for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
           double rand = Math.random();
           char sprinkle = rand < 0.333 ? '-' : (rand < 0.666 ? '*' : '/');
           System.out.print(sprinkle);
         }
         System.out.println();
-
       }
-
 
       if (l < layers - 1) {
         System.out.println("-".repeat(width));
       }
 
       System.out.println("=".repeat(width));
-
     }
   }
 
@@ -55,4 +49,10 @@ public class Cake {
     Cake myCake = new Cake("~", 5, 20, 3);
     myCake.draw();
   }
+
+  public void draw(Table t) {
+    draw();
+  }
+
+
 }
