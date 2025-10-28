@@ -1,7 +1,6 @@
 // Ali Zaidi
 // P2
 // Zero-Hero
-// 10-10-25
 
 // MAIN GOAL: MAKE  A CAKE, HAVE SOMEONE MAKE IT, BUY IT, AND SOMEONE WHO GETS THE MONEY
 package edu.bhscs;

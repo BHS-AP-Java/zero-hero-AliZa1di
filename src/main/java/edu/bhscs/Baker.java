@@ -1,7 +1,6 @@
 // Ali Zaidi
 // P2
 // Zero-Hero
-// 10-10-25
 
 package edu.bhscs;
 

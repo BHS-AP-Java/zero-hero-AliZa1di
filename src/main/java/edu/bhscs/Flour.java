@@ -1,3 +1,6 @@
+// Ali Zaidi
+// P2
+// Zero-Hero
 package edu.bhscs;
 
 public class Flour {
