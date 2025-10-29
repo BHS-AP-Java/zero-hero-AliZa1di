@@ -36,9 +36,6 @@ public class Baker {
     if (doYouWantToWorkHere.equals("y")) {
       this.placeOfWork = bakery;
       System.out.println(this.name + " now works at " + bakery.getName());
-
-
-
     }
   }
 

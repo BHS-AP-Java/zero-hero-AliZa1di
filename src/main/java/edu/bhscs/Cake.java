@@ -57,6 +57,4 @@ public class Cake {
   public void draw(Table t) {
     draw();
   }
-
-
 }
