@@ -27,5 +27,3 @@ public class Main {
     System.out.println("frosting " + frosting);
   }
 }
-//10/31 Im in Visual Studio Code
-//TestTest

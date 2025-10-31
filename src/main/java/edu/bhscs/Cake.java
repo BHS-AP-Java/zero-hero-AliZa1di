@@ -58,3 +58,9 @@ public class Cake {
     draw();
   }
 }
+
+
+int offset = (myCake.getWidth() - myTable.getWidth()) / 2;
+
+if(offset < 0) { /* do the right thing when myTable is bigger */ }
+else { /* do the right thing when the cake is bigger  */ }
