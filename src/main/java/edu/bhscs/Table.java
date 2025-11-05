@@ -18,7 +18,7 @@ public class Table {
   }
 
 
-  public void draw(scale) {
+public void draw(scale) {
     if (scale <= 0) {
       System.out.println("Scale Stuff Things");
       return;
@@ -27,6 +27,3 @@ public class Table {
   public void draw(int scaleamount) {
     draw(scaleamount / 100.0);
   }
-
-}
-
