@@ -7,6 +7,8 @@ public class Table {
 
   int legs;
   int width;
+  String leg;
+  String widthofleg;
 
   public Table(int legs, int width) {
     this.legs = legs;
@@ -16,8 +18,15 @@ public class Table {
   }
 
 
+  public void draw(scale) {
+    if (scale <= 0) {
+      System.out.println("Scale Stuff Things");
+      return;
+    }
 
+  public void draw(int scaleamount) {
+    draw(scaleamount / 100.0);
+  }
 
-
-  
 }
+
