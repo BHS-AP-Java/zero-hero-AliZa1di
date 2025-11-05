@@ -49,18 +49,4 @@ public class Cake {
     }
   }
 
-  public static void main(String[] args) {
-    Cake myCake = new Cake("~", 5, 20, 3);
-    myCake.draw();
-  }
-
-  public void draw(Table t) {
-    draw();
-  }
-}
-
-
-int offset = (myCake.getWidth() - myTable.getWidth()) / 2;
-
-if(offset < 0) { /* do the right thing when myTable is bigger */ }
-else { /* do the right thing when the cake is bigger  */ }
+ 
