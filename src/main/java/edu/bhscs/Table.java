@@ -2,15 +2,10 @@ package edu.bhscs;
 
 public class Table {
 
-  //Properties
+  // Properties
 
+  // Constructor
 
-
-  //Constructor
-
-
-
-  
-  //Methods
+  // Methods
 
 }
